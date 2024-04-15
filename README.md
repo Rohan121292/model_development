@@ -1,1 +1,6 @@
-# model_development
+# Model Development: Tweets Classification algorithm using LSTM (Long Short Term Memory) Network
+
+This code illustrates an end-to-end process for building and training a machine learning model to classify tweets regarding disasters using natural language processing techniques in PyTorch. Initially, the script prepares the data by loading and pre-processing tweets into training, validation, and test sets. It handles data shuffling, splitting, and truncation of text to a specified word limit before saving them into separate files for consumption by PyTorch's text processing tools.
+
+Subsequently, the script defines and trains a Long Short-Term Memory (LSTM) network, employing techniques like embedding and dropout to enhance model performance on the classification task. It uses a custom DataLoader with a bucket sampling strategy to efficiently handle batches of text data of similar lengths, minimizing computational overhead. The model is trained over several epochs, evaluating its performance periodically and saving the best model based on validation loss. Finally, the trained model is evaluated on a validation set using metrics like accuracy and confusion matrix, visualizing the results to assess the model's effectiveness in distinguishing between disaster-related and non-disaster tweets.
+
